@@ -39,7 +39,7 @@ and a camel case convention is used to separate those componets.
 | Acc     | Represent linear acceleration. Feature that come from or derived from accelerometer. |
 | Gyro    | Repersent angular velocity. Feature that come from or derived from gyroscope |
 | Jerk    | {components}Jerk represent the time derivative of {components} |
-| Mag     | Represent Magnitude |
+| Mag     | Represent Magnitude. Calculated using the Euclidean norm. |
 
 ### Dimension
 Can be `X` or `Y` or `Z` or no value(optional). The data from sensor are recorded as 3-axial raw signals.
