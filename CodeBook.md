@@ -18,8 +18,16 @@ The dataset adhered to the [tidy data principle](https://vita.had.co.nz/papers/t
 * Each type of observational unit forms a table.
 
 
-## Variable
-The variable follows the following convention:
+## Variables
+
+#### Independent Variables 
+| Variable        | Description                 |
+| ------ |:----------------------|
+| Subject    | Represent the identity of participants of the experiment. There are 30 participants, labelled from 1 to 30 |
+| Activity   | Activity carried out for the experiment. Each person performed six activities (walking, walking upstair, walking downstair, sitting, standing, laying) |
+  
+#### Measurement Variables
+The measurement variables in dataset follow the following convention:
 ```
 {Domain}{listOfComponets}{Optional: Dimension}{typeOfMeasurement}
 ```
