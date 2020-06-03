@@ -20,26 +20,26 @@ The dataset adhered to the [tidy data principle](https://vita.had.co.nz/papers/t
 
 ## Variables
 
-#### Independent Variables 
+### Independent Variables 
 | Variable        | Description                 |
 | ------ |:----------------------|
 | Subject    | Represent the identity of participants of the experiment. There are 30 participants, labelled from 1 to 30 |
 | Activity   | Activity carried out for the experiment. Each person performed six activities (walking, walking upstair, walking downstair, sitting, standing, laying) |
   
-#### Measurement Variables
+### Measurement Variables
 The measurement variables in dataset follow the following convention:
 ```
 {Domain}{listOfComponets}{Optional: Dimension}{typeOfMeasurement}
 ```
 and a camel case convention is used to separate those componets.
 
-### Domain
+#### Domain
 | Token        | Description                 |
 | ------ |:----------------------|
 | t    | Represent time domain signals. These signals are captured at constant rate of 50Hz and then processed to remove noise |
 | f    | Represent frequency domain signals. These features are produced when Fast Fourier Transform is applied to time domain signal |
 
-### Components
+#### Components
 | Token  | Desctiption          |
 | ------ | :------------------- |
 | Body    | Signal based on the body of an experiment participants, one of two components derived from the time based signals on the phone's sensor |
@@ -49,10 +49,10 @@ and a camel case convention is used to separate those componets.
 | Jerk    | {components}Jerk represent the time derivative of {components} |
 | Mag     | Represent Magnitude. Calculated using the Euclidean norm. |
 
-### Dimension
+#### Dimension
 Can be `X` or `Y` or `Z` or no value(optional). The data from sensor are recorded as 3-axial raw signals.
 
-### typeOfMeasurement
+#### typeOfMeasurement
 | Token        | Description                 |
 | ------ |:----------------------|
 | Mean    | Average |
